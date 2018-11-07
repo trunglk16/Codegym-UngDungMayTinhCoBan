@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .display{
+
+        font-size: 40px;
+        width: 195px;
+        height: 50px;
+        padding: 10px;
+        text-align: right;
+
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        padding: 10px;
+        margin: 0px;
+        float: left;
+        text-align: center;
+        background-color: #2d3949;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    .window{
+        border-color: black;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        background: bisque;
+    }
+
+
+</style>
+<body><script src="test.js"></script>
+<div class="window">
+<table >
+
+    <input class="display" type="text" id="display" placeholder="0">
+    </tr>
+    <tr>
+        <td><button class="button"  onclick="AC(clear)">AC</button></td>
+        <td><button class="button" onclick="number(')');">)</button></td>
+        <td><button class="button" onclick="number('(');">(</button></td>
+        <td><button class="button" style="font-size: 20px;" onclick="del();">DEL</button></td>
+
+    </tr>
+    <tr>
+        <td><button class="button" onclick="number(7);">7</button></td>
+        <td><button class="button" onclick="number(8);">8</button></td>
+        <td><button class="button" onclick="number(9);">9</button></td>
+        <td><button class="button" onclick="operator('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button class="button"  onclick="number(4);">4</button></td>
+        <td><button class="button"  onclick="number(5);">5</button></td>
+        <td><button class="button"  onclick="number(6);">6</button></td>
+        <td><button class="button"  onclick="operator('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button class="button"  onclick="number(1);">1</button></td>
+        <td><button class="button"  onclick="number(2);">2</button></td>
+        <td><button class="button"  onclick="number(3);">3</button></td>
+        <td><button class="button"  onclick="operator('-')">-</button></td>
+    </tr>
+    <tr>
+
+        <td><button class="button"  onclick="number(0);">0</button></td>
+        <td><button class="button"  onclick="number('.');">.</button></td>
+        <td><button class="button"  onclick="bang();">=</button></td>
+        <td><button class="button"  onclick="operator('+')">+</button></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
